@@ -12,7 +12,7 @@
     "**/*.spec.json": true,
     "**/test.ts": true,
     ".prettierignore": true,
-    ".prettierrc": true,
+    ".prettierrc": false,
 
     "typings": true,
     "**/*.map": true,
