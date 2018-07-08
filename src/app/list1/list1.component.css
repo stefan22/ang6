@@ -1,0 +1,47 @@
+.card-body {
+    border: 1px solid lightsalmon;
+    min-height: 450px;
+}
+
+.card-body h3 {
+    margin: 1.25em 0;
+}
+
+.form-label {
+  cursor: pointer;
+}
+
+span.spanin-label {
+    text-align: left;
+    width: 70%;
+    display: inline-block;
+}
+
+span.spanin-label a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.form-label {
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: left;
+    width: 5%;
+    display: inline-block;
+    
+}
+
+.form-group {
+    margin: 1.25em 0;
+}
+
+@media (max-width: 1200px) {
+    #list1.card-body,
+    #list2.card-body {
+        margin-top: 3em;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+}

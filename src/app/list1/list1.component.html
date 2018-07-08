@@ -1,0 +1,68 @@
+<div class="row justify-content-center">
+  <div class="position-relative col-lg-6">
+    <div class="card col-sm-11 text-center">
+      <div id="list1" class="card-body">
+        <h3>List 1</h3>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="query1" class="col-sm-2 col-sm-offset-1 control-label">
+              Query: </label>{{ query1 }}
+            <div class="col-sm-6">
+              <input [(ngModel)]="query1" type="text" class="form-control" id="query1" placeholder="enter query.."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- endof form-horizontal class -->
+        <form>
+          <div class="form-group"
+            *ngIf="query1">
+            <div class="form-label" *ngFor="let p of posts | searchList: query1">
+
+              <app-list1-details [details]="p"></app-list1-details>
+              
+            </div>
+          </div>
+          <!-- form-group -->
+        </form>
+      </div>
+      <!-- card-body -->
+    </div>
+    <!-- card col-md-11 -->
+  </div>
+  <!-- position-relative col-lg-6 -->
+
+  <div class="position-relative col-lg-6">
+    <div class="card col-sm-11 col-sm-offset-1 text-center">
+      <div id="list2" class="card-body">
+        <h3>List 2</h3>
+        <div class="form-group">
+          <div class="form-label">
+            <span class="spanin-label">Is: {{ query2 }}</span>
+
+          </div>
+          <!-- form-label -->
+          <div class="List-group-item">
+            <div class="media">
+              here
+            </div>
+          </div>
+          <div class="List-group-item">
+            <div class="media">
+              here
+            </div>
+          </div>
+        </div>
+        <!-- endof form-group -->
+      </div>
+      <!-- card-body -->
+    </div>
+    <!-- card col-md-10 -->
+  </div>
+  <!-- position-relative col-lg-6 -->
+
+
+
+
+
+</div>
