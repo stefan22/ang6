@@ -8,19 +8,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" (click)="onClickChange($event)" [style.color]="color">
+      <a class="navbar-brand" (click)="onClickBrand($event)" [style.color]="color">
         Ng6</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="./">Home</a>
+      <ul (click)="onClickNavItem($event,navContainer)" #navContainer class="nav navbar-nav">
+        <li [class.active]="url">
+          <a routerLink="./" 
+          routerLinkActive="active-link" 
+          [routerLinkActiveOptions]="{exact: true}"
+          ng-href="./">Home</a>
         </li>
         <li>
-          <a href="./list1">List 1</a>
+          <a routerLink="./list1" 
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}" 
+            ng-href="./list1">List 1</a>
         </li>
         <li>
-          <a href="./login">Login</a>
+          <a routerLink="./login" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
+          ng-href="./login">Login</a>
         </li>
         
       </ul>

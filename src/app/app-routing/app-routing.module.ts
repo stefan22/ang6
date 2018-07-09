@@ -11,6 +11,7 @@ const routes: Routes = [
     path: '',
     component: DashboardComponent
   },
+  
   {
     path: 'list1',
     component: List1Component
@@ -23,6 +24,7 @@ const routes: Routes = [
     path: 'reset-password',
     component: ResetPasswordComponent
   }
+
 ];
 
 @NgModule({
