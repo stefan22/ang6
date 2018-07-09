@@ -1,0 +1,30 @@
+.forgot-password {
+  float:right; 
+  font-size: 90%; 
+  position: relative; 
+  top:-15px;
+
+}
+
+.inner-panel {
+  padding-top:30px
+}
+
+.user-form {
+  margin-bottom: 25px
+}
+
+#btn-login, #btn-reset-password {
+  display: inline-block;
+  width:24%;
+}
+
+#btn-reset-password {
+  margin-left:20px;
+}
+
+.login-no-account {
+  border-top: 1px solid#888; 
+  padding-top:15px; 
+  font-size:85%;
+}

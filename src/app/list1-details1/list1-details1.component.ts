@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list1-details',
-  templateUrl: './list1-details.component.html',
-  styleUrls: ['./list1-details.component.css'],
+  selector: 'app-list1-details1',
+  templateUrl: './list1-details1.component.html',
+  styleUrls: ['./list1-details1.component.css'],
   inputs: ['details']
 })
-export class List1DetailsComponent implements OnInit {
+export class List1Details1Component implements OnInit {
+
   highlight: boolean;
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -23,6 +24,4 @@ export class List1DetailsComponent implements OnInit {
 
   }// onTitleClick
 
-
-
-}// ListDetailsComponent class
+}

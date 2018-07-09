@@ -1,0 +1,7 @@
+<div class="media-body"></div>
+<span class="form-label">{{ details.Id }}</span>
+<span class="spanin-label">
+  <a ng-href="#" (click)="onTitleClick($event, details)" [style.backgroundColor]="(details.highlight) ? '#FFEE58' : 'white'">
+    {{ details.Title }}
+  </a>
+</span>
